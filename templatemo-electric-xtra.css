@@ -1199,3 +1199,19 @@ https://templatemo.com/tm-596-electric-xtra
     to { transform: translateX(0) translateY(0); opacity: 1; }
 }
 
+
+  .terminos-container {
+    max-height: 560px; /* altura máxima visible */
+    overflow-y: auto;  /* activa scroll vertical si se supera la altura */
+    padding: 10px;
+    border-radius: 6px;
+  }
+
+  .terminos-container ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+
+  .terminos-container li {
+    margin-bottom: 10px;
+  }
