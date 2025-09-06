@@ -25,7 +25,7 @@ function sendEmail() {
     // Envía correo de confirmación al cliente
     emailjs.send('service_jo0aja4', 'template_ek8h2x7', formData)
         .then(response => {
-            alert('¡Correo de confirmación enviado!');
+            alert('¡Correo de contacto enviado!');
             form.reset();
         })
         .catch(error => {
@@ -166,7 +166,6 @@ get_year();
             e.preventDefault();
             // Add your form submission logic here
             sendEmail();
-            alert('Message sent! We\'ll get back to you soon.');
             this.reset();
         });
 
