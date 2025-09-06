@@ -8,6 +8,32 @@ https://templatemo.com/tm-596-electric-xtra
 
 */
 
+(function(){
+    emailjs.init("b7fb-cJIjvfA19m96");
+})();
+
+function sendEmail() {
+    const form = document.getElementById('contactForm');
+
+    const formData = {
+        name: form.name.value,
+        email: form.email.value,
+        title: form.subject.value,
+        message: form.message.value
+    };
+
+    // Envía correo de confirmación al cliente
+    emailjs.send('service_jo0aja4', 'template_ek8h2x7', formData)
+        .then(response => {
+            alert('¡Correo de confirmación enviado!');
+            form.reset();
+        })
+        .catch(error => {
+            console.error('Error enviando el correo:', error);
+            alert('Ocurrió un error al enviar el correo.');
+        });
+}
+
 // Mostrar banner solo si no se aceptaron cookies
 document.addEventListener('DOMContentLoaded', () => {
     const banner = document.getElementById('cookieBanner');
@@ -139,6 +165,7 @@ get_year();
         document.getElementById('contactForm').addEventListener('submit', function(e) {
             e.preventDefault();
             // Add your form submission logic here
+            sendEmail();
             alert('Message sent! We\'ll get back to you soon.');
             this.reset();
         });
