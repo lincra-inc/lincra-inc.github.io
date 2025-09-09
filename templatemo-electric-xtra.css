@@ -1215,3 +1215,78 @@ https://templatemo.com/tm-596-electric-xtra
   .terminos-container li {
     margin-bottom: 10px;
   }
+
+  .projects {
+    padding: 80px 20px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.project-card {
+    background-color: #1a1a1a;
+    border-radius: 12px;
+    overflow: hidden;
+    width: 300px;
+    box-shadow: 0 0 30px rgba(0, 178, 255, 0.5);
+    transition: transform 0.3s;
+}
+.project-card-link {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+}
+.project-card-link .project-card {
+    cursor: pointer;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-image img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.project-info {
+    padding: 15px;
+    text-align: left;
+}
+
+.project-info h3 {
+    margin: 0 0 5px 0;
+    font-size: 1.2rem;
+    color: #00b2ff;
+}
+
+.project-info p {
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+}
+
+.project-status {
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.project-construction {
+    background-color: #ff5e00;
+    color: #fff;
+}
+
+.project-deployed {
+    background-color: #00b200;
+    color: #fff;
+}
